@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-LABEL maintainer="jonathan@jdsdev.com"
+LABEL maintainer="faroseroc@unal.edu.co"
 
 # Let the container know that there is no tty
 ENV DEBIAN_FRONTEND noninteractive
@@ -11,7 +11,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # ./php/{php_version}/*
 ENV PHP_VERSION 8.1
 # `apt-cache madison php8.1` to list available minor versions
-ENV PHP_MINOR_VERSION 8.1.13-1+ubuntu18.04.1+deb.sury.org+1
+ENV PHP_MINOR_VERSION 8.1.13-1+ubuntu20.04.1+deb.sury.org+1
 ENV COMPOSER_VERSION 2.4.4
 # `apt-cache madison nginx` to list available versions
 ENV NGINX_VERSION 1.23.2-1~bionic
@@ -25,9 +25,9 @@ RUN set -x \
         gnupg2 \
         iproute2 \
         mysql-client \
-        python-pip \
-        python-setuptools \
-        python-wheel \
+        python3-pip \
+        python3-setuptools \
+        python3-wheel \
         software-properties-common \
         unzip \
         zip \

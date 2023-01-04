@@ -1,6 +1,6 @@
-# NGINX with PHP-FPM on Ubuntu 18.04
+# NGINX with PHP-FPM on Ubuntu 20.04
 
-[![Docker Hub; binaryorigami/ubuntu-nginx-php](https://img.shields.io/badge/docker%20hub-binaryorigami%2Fubuntu--nginx--php-blue.svg?&logo=docker&style=for-the-badge)](https://hub.docker.com/r/binaryorigami/ubuntu-nginx-php) [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?&style=for-the-badge)](https://github.com/jdsdev/ubuntu-nginx-php/blob/master/LICENSE.md)
+[![Docker Hub; faroseroc/ubuntu-nginx-php](https://img.shields.io/badge/docker%20hub-faroseroc%2Fubuntu--nginx--php-blue.svg?&logo=docker&style=for-the-badge)](https://hub.docker.com/r/faroseroc/ubuntu-nginx-php) [![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?&style=for-the-badge)](https://github.com/FredyRosero/ubuntu-nginx-php/blob/master/LICENSE.md)
 
 ## Introduction
 
@@ -35,13 +35,13 @@ This is a Dockerfile to build an Ubuntu based container for NGINX and PHP-FPM. T
 Build the container:
 
 ```
-docker build -t binaryorigami/ubuntu-nginx-php .
+docker build -t faroseroc/ubuntu-nginx-php .
 ```
 
 Run the container:
 
 ```
-docker run -p 80:8080 -it binaryorigami/ubuntu-nginx-php
+docker run -p 80:8080 -it faroseroc/ubuntu-nginx-php
 ```
 
 Default web root found at:
@@ -55,3 +55,8 @@ Default logs found at:
 ```
 /var/log
 ```
+
+## Publishing the container
+~~~bash
+docker push faroseroc/ubuntu-nginx-php
+~~~
